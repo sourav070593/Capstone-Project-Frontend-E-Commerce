@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS for styling -->
+    <style>
+        
+        .product-card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: 200px;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(67, 67, 179);">
+<!-- The above code is creating a product listing page with three products. Each product is displayed in
+a separate column using Bootstrap's grid system. Each product card includes an image, title, price,
+description, and a "Buy Now" button. -->
+
+<div class="container">
+    <h1 class="text-center">All Products</h1>
+    <div class="row">
+        <!-- Product 1 -->
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="https://cdn.britannica.com/61/177761-050-F38C22B1/Christopher-Reeve-Superman-Richard-Donner.jpg" alt="Product 1" class="product-image">
+                <h2>Superman dress</h2>
+                <p>Price: $10.00</p>
+                <p>Supreme</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Dalailama1_20121014_4639.jpg" alt="Product 2" class="product-image">
+                <h2>Lama dress</h2>
+                <p>Price: $15.00</p>
+                <p>Robe for kids</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="https://i5.walmartimages.com/seo/LEGO-Batman-Deluxe-LEGO-Boy-s-Halloween-Fancy-Dress-Costume-for-Child-L-12-14_b7c90d06-0d8b-424e-ad3c-00067652ba51_1.c7ea3b60fae60c82910347cb1af9e39d.jpeg" alt="Product 3" class="product-image">
+                <h2>Kid's Batman dress</h2>
+                <p>Price: $20.00</p>
+                <p>Mini Batman</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="https://i5.walmartimages.com/asr/34ea2c4b-0ffc-4b3a-9101-2ad7c28b56b1.70fda322a4418049ce2a83b3da4be5b7.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Product 3" class="product-image">
+                <h2>George Washington's dress</h2>
+                <p>Price: $20.00</p>
+                <p>Youngling Dress</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="data:image/jpeg;base64,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" alt="Product 3" class="product-image">
+                <h2>Hellen Kellen's dress for young girl</h2>
+                <p>Price: $20.00</p>
+                <p>Hellen</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="https://images.halloweencostumes.com/products/61194/1-1/boys-colonial-benjamin-franklin-costume.jpg" alt="Product 3" class="product-image">
+                <h2>Ben Franklin for young kids</h2>
+                <p>Price: $20.00</p>
+                <p>DescKid's dress</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<!-- Include Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!-- The above code is creating the header section of an e-commerce website. It includes a navigation bar
+with a brand logo, menu items, a search bar, and login and cart icons. The code also includes the
+necessary CSS and font-awesome libraries for styling and icons. -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-Commerce Website</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/33fbf1eb9f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body style="background-color: rgb(78, 80, 180);">
+  <header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><i>Sourav's Store <i class="fa-solid fa-store"></i></i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+    <ul class="navbar-nav">
+     
+      
+    <!-- The above code is creating a navigation bar using HTML and Bootstrap. It consists of two
+    separate navigation bars. The first navigation bar contains links for "Contact Us", a search
+    bar, "Login", and a shopping cart icon. The second navigation bar contains links for "Home",
+    "All Products", dropdown menus for "Women" and "Men" categories, and a link for "Kids" category. -->
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact Us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <div class="input-group">
+        <input class="form-control" type="search" placeholder="Search for products..." aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </div>
+      </div>
+    </form>
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link" href="login.html">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="collapse navbar-collapse justify-content-center" id="productNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="all products.html">All Products</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWomen" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Women
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownWomen">
+          <a class="dropdown-item" href="tops.html">Tops</a>
+          <a class="dropdown-item" href="Dresses.html">Dresses</a>
+          <a class="dropdown-item" href="bottoms.html">Bottoms</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMen" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Men
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMen">
+          <a class="dropdown-item" href="shirts.html">Shirts</a>
+          <a class="dropdown-item" href="pants.html">Pants</a>
+          <a class="dropdown-item" href="suits.html">Suits</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="kids.html">Kids</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+<!-- The above code is creating a carousel with three cards. Each card represents a different dress or
+costume. The carousel allows the user to scroll through the cards horizontally. Each card has an
+image, a title, a description, and a "Buy Now" button. -->
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="cards-wrapper">
+        <div class="card d-none d-md-block col-lg-3 col-md-6">
+
+        <div class="row">
+      <div class="card">
+        <img src="https://cdn.britannica.com/61/177761-050-F38C22B1/Christopher-Reeve-Superman-Richard-Donner.jpg" class="card-img-top"  alt="Superman dress">
+        <div class="card-body">
+          <h5 class="card-title">Superman dress</h5>
+          <p class="card-text">Christpher Reeve vintage dress with underpants</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+      </div>
+    </div>
+      <div class="card d-none d-md-block col-lg-3 col-md-6">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Dalailama1_20121014_4639.jpg" class="card-img-top" alt="Dala Lama dress">
+        <div class="card-body">
+          <h5 class="card-title">His holiness Lama dress</h5>
+          <p class="card-text">Dalai Lama's robe</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+      <div class="card d-none d-md-block col-lg-3 col-md-6">
+        <img src="https://i5.walmartimages.com/seo/LEGO-Batman-Deluxe-LEGO-Boy-s-Halloween-Fancy-Dress-Costume-for-Child-L-12-14_b7c90d06-0d8b-424e-ad3c-00067652ba51_1.c7ea3b60fae60c82910347cb1af9e39d.jpeg" class="card-img-top" alt="batman">
+        <div class="card-body">
+          <h5 class="card-title">Kid's Batman dress</h5>
+          <p class="card-text">Mini Btaman dress</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+      <div class="card d-none d-md-block col-lg-3 col-md-6">
+        <img src="https://i5.walmartimages.com/asr/34ea2c4b-0ffc-4b3a-9101-2ad7c28b56b1.70fda322a4418049ce2a83b3da4be5b7.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" class="card-img-top" alt="Washington's dress">
+        <div class="card-body">
+          <h5 class="card-title">George Washington's dress</h5>
+          <p class="card-text">Founding father of America's dress for youngling</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <div class="cards-wrapper">
+        <div class="card">
+          <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Hellen Keller">
+          <div class="card-body">
+            <h5 class="card-title">Hellen Kellen's dress for young girl</h5>
+            <p class="card-text">True role model for teens</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+        <div class="card d-none d-md-block">
+          <img src="https://images.halloweencostumes.com/products/61194/1-1/boys-colonial-benjamin-franklin-costume.jpg" class="card-img-top" alt="Ben Franklin">
+          <div class="card-body">
+            <h5 class="card-title">Ben Franklin</h5>
+            <p class="card-text">One of the founding fathers of America and an amazing polymath.</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+        <div class="card d-none d-md-block">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Dalailama1_20121014_4639.jpg" class="card-img-top" alt="Dala Lama dress">
+          <div class="card-body">
+            <h5 class="card-title">His holiness Lama dress</h5>
+            <p class="card-text">Dalai Lama's robe</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+        <div class="card d-none d-md-block">
+          <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mahatamma Gandhi's Dress</h5>
+            <p class="card-text">Buy Gandh's Dress for kids</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="cards-wrapper">
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/51zdyk5qwtL._AC_UY1000_.jpg" class="card-img-top" alt="Skirt">
+          <div class="card-body">
+            <h5 class="card-title">Skirt</h5>
+            <p class="card-text">Stylish skirt for women</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+          
+        </div>
+        <div class="card d-none d-md-block">
+          <img src="https://i.ebayimg.com/images/g/DDcAAOSwOGdi4PrW/s-l1200.webp" class="card-img-top" alt="dress">
+          <div class="card-body">
+            <h5 class="card-title">Nilofar Dress</h5>
+            <p class="card-text">Blue Queen dress</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+        <div class="card d-none d-md-block">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Dalailama1_20121014_4639.jpg" class="card-img-top" alt="Dala Lama dress">
+          <div class="card-body">
+            <h5 class="card-title">His holiness Lama dress</h5>
+            <p class="card-text">Dalai Lama's robe</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+        <div class="card d-none d-md-block">
+          <img src="https://www.instyle.com/thmb/CsgTSDfT83TkqRWkpyLc735FalY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/071822-Fashion-sports-bra-SOC-2000-b90631abdef9418bbdc3e33c51028434.jpg" class="card-img-top" alt="bra">
+          <div class="card-body">
+            <h5 class="card-title">Sport's bra</h5>
+            <p class="card-text">Provides optimum padding for amazing comfort</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</header>
+<!-- The above code is creating a footer element with the class "mt-5" and "text-center". Inside the
+footer, there is a paragraph element containing the text "&copy; Frontend Project". This code is
+likely used to create a footer section at the bottom of a webpage, displaying the copyright
+information for a frontend project. -->
+
+<footer class="mt-5 text-center">
+  <p>&copy; Frontend Project </p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script></body>
+</html>
